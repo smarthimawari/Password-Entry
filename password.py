@@ -1,14 +1,22 @@
-password = input('please enter your password')
-if password == '12345':
+password = '12345'
+entry = input('please enter your password')
+if entry == password:
 	print('successful')
 else:
-	x = 2
-	while x <= 3:
-		print('Remaining times:', 4-x) 
-		password = input('please try again:') 
-		if password == '12345':
+	x = 0
+	while x < 2:
+		print('Remaining times:', 2-x) 
+		entry = input('please try again:') 
+		if entry == password:
 			print('successful')
-			break 
-		x=x+1
-		print('Fail')
+			break
+		x = x + 1
+	print('Sorry you failed')
+	
+
+
+	
+
+
+
 
